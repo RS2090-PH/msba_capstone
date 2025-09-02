@@ -209,12 +209,5 @@ __marimo__/
 # Data
 # Raw data provided by the client. This data should never be saved to the repository
 # and should be included in this ignore file here.
-MSBA_fall_2025-20250902T175335Z-1-002.zip
-customer.csv
-cutoff_times.csv
-google_analytics.csv
-material.csv
-operating_hours.csv
-orders.csv
-sales.csv
-visit_plan.csv
+*.zip
+*.csv
