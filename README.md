@@ -4,11 +4,10 @@ This repository hosts the group work for the University of Utah **Master of Scie
 
 ## Repository Structure
 
-* **`/data/`** – Processed and synthetic datasets (no raw stakeholder data).
 * **`/notebooks/`** – Jupyter/Colab notebooks for EDA, modeling, and visualization.
-* **`/src/`** – Production-ready Python scripts and helper modules.
 * **`/reports/`** – Drafts and final reports, presentations, and documentation.
 * **`/project_mgmt/`** – Meeting notes, task tracking, and progress logs.
+* **`/files/`** - Misc files and other shared content.
 
 ## Objectives
 
