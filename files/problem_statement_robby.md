@@ -21,7 +21,7 @@ Addressing cart abandonment offers immediate financial upside by converting unre
 
 ## Analytics Approach
 
-The project will leverage the client’s fact/dimension warehouse structure, combining Google Analytics event data with transactional data from orders and sales. Diagnostic analysis will identify behavioral and temporal patterns preceding abandonment, such as sequences of clicks, device usage, or delays in checkout. Predictive modeling may highlight which conditions most strongly signal abandonment risk, while prescriptive recommendations can inform interface improvements, messaging strategies, or timing interventions.
+The project will leverage the client’s fact/dimension warehouse structure, combining Google Analytics event data with transactional data from orders and sales. Descriptive analysis will identify behavioral and temporal patterns preceding abandonment, such as sequences of clicks, device usage, or delays in checkout. Predictive modeling may highlight which conditions most strongly signal abandonment risk, while prescriptive recommendations can inform interface improvements, messaging strategies, or timing interventions.
 
 The approach prioritizes business questions with the highest financial impact. Specifically, estimating revenue loss from abandoned carts and identifying which products appear most frequently in abandoned carts will take precedence, since these directly quantify financial consequences. Secondary but valuable analyses will include understanding recovery behaviors (customers later completing purchases) and device-specific friction points. While not all potential questions will be addressed, this prioritization ensures the greatest immediate return.
 
