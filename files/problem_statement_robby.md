@@ -1,17 +1,11 @@
 # Problem Statement: Reducing Cart Abandonment on MyCoke360
 
-## **Business Problem**
-
-The client recently launched **MyCoke360**, a digital B2B ordering platform, with the goal of streamlining customer ordering behavior. However, a significant challenge has emerged: **high cart abandonment rates**. Customers often add items to their cart but fail to complete orders by their assigned cutoff dates. As a result, abandoned items either roll into future order cycles or are never purchased at all, creating uncertainty in demand forecasting and direct revenue loss.
-
-This problem is financially significant because abandoned carts represent unrealized revenue opportunities, potentially distort product mix, and reduce customer satisfaction. If left unaddressed, the issue could result in millions of dollars in lost sales annually, weaken customer adoption of the platform, and erode confidence in the new ordering system.
-
 
 ## Business Problem
 
-MyCoke360, a digital ordering platform launched in summer 2024, serves B2B customers such as restaurants, schools, and retailers. As a new initiative, the platform has not yet fully optimized the ordering experience, and one of the most pressing challenges is cart abandonment. Cart abandonment occurs when a customer adds products to their digital cart but fails to complete the order by their required cutoff time. Because orders must be placed before specific deadlines, items left behind roll over into future carts unless removed, inflating abandoned cart volumes. This directly reduces revenue and may contribute to customer dissatisfaction or churn.
+MyCoke360, a digital ordering platform launched in summer 2024, serves B2B customers such as restaurants, schools, and retailers. As a new initiative, the platform has not yet fully optimized the ordering experience, and one of the most pressing challenges is cart abandonment. Cart abandonment occurs when a customer adds products to their digital cart but fails to complete the order by their required cutoff time. Because orders must be placed before specific deadlines, items left behind roll over into future carts unless removed, inflating abandoned cart volumes. This directly reduces revenue, creates uncertainty in demand forecasting and may contribute to customer dissatisfaction or churn.
 
-Cart abandonment undermines the efficiency and financial impact of the platform. Each instance represents unrealized revenue, distorted product demand forecasting, and potential erosion of trust if customers perceive the system as complex or unreliable. Without addressing this issue, the client risks limiting the growth and adoption of MyCoke360, as well as losing competitive advantage to alternative ordering channels.
+Cart abandonment undermines both the efficiency and the financial performance of the platform. Each instance represents unrealized revenue, skews product demand forecasting, and risks eroding customer trust if the ordering process is perceived as complex or unreliable. If left unaddressed, this challenge could translate into millions of dollars in lost sales annually, restrict the growth and adoption of MyCoke360, weaken confidence in the platform, and reduce the client’s competitive advantage relative to alternative ordering channels. 
 
 
 ## Benefit of a Solution
