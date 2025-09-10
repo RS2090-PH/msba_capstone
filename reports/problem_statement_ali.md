@@ -78,12 +78,5 @@
 
 
 
-```python
-!jupyter nbconvert Business_Problem_Ali.ipynb --to markdown
-```
-
-    [NbConvertApp] Converting notebook Business_Problem_Ali.ipynb to markdown
-    [NbConvertApp] Writing 6096 bytes to Business_Problem_Ali.md
-
 
 
