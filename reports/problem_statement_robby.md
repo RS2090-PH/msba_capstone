@@ -30,7 +30,7 @@ This workstream will deliver a reconciled dataset and calculations required to c
 
 The analysis period is 5/31/2024 through 5/26/2025. Data sources include GA events for site interactions and associated items, orders for what was ordered, and sales for realized revenue using NSI_DEAD_NET. Dimension tables provide customer, visit plan history, operating hours, cutoff time exceptions, and material attributes such as brand, flavor, pack size, and pack type. Known limitations include missing GA purchase events, mismatches between GA cart or purchase items and the orders table, and blank item details for some mobile purchases. These limitations will be mitigated by reconciling GA with orders to correct abandonment labels and by valuing items using sales data.
 
-**Key deadlines:**
+**Key Deadlines:**
 
 * 9/12/2025: **Draft Workstream Problem Statement** (Ali Ladha)
 * 9/12/2025: **Draft Workstream Problem Statement** (Cyrus Sobhani)
