@@ -30,4 +30,32 @@ This workstream will deliver a reconciled dataset and calculations required to c
 
 The analysis period is 5/31/2024 through 5/26/2025. Data sources include GA events for site interactions and associated items, orders for what was ordered, and sales for realized revenue using NSI_DEAD_NET. Dimension tables provide customer, visit plan history, operating hours, cutoff time exceptions, and material attributes such as brand, flavor, pack size, and pack type. Known limitations include missing GA purchase events, mismatches between GA cart or purchase items and the orders table, and blank item details for some mobile purchases. These limitations will be mitigated by reconciling GA with orders to correct abandonment labels and by valuing items using sales data.
 
+**Key deadlines:**
 
+- 9/12/2025: Cart Abandonment Effects on Raw Materials Ordering Inquiry (Cyrus Sobhani)
+- 9/12/2025: Generate Individual Problem Statement (Ali Ladha)
+- 9/12/2025: Generate Individual Problem Statement (Cyrus Sobhani)
+- 9/12/2025: Generate Individual Problem Statement (Robby Stohel)
+- 9/12/2025: Generate Individual Problem Statement (Sterling Leduc)
+- 9/13/2025: Compile Final Problem Statement (Robby Stohel)
+- 9/14/2025: Submit Final Problem Statement (Ali Ladha, Cyrus Sobhani, Sterling Leduc, Robby Stohel)
+- 10/02/2025: Generate Individual EDA Notebook (Ali Ladha)
+- 10/02/2025: Generate Individual EDA Notebook (Cyrus Sobhani)
+- 10/02/2025: Generate Individual EDA Notebook (Sterling Leduc)
+- 10/02/2025: Generate Individual EDA Notebook (Robby Stohel)
+- 10/04/2025: Compile Final EDA Notebook (Robby Stohel)
+- 10/05/2025: Submit Final EDA Notebook (Ali Ladha)
+- 10/23/2025: Generate Individual Modeling Notebook (Ali Ladha)
+- 10/23/2025: Generate Individual Modeling Notebook (Cyrus Sobhani)
+- 10/23/2025: Generate Individual Modeling Notebook (Sterling Leduc)
+- 10/23/2025: Generate Individual Modeling Notebook (Robby Stohel)
+- 10/25/2025: Compile Final Modeling Notebook (Robby Stohel)
+- 10/26/2025: Submit Final Modeling Notebook (Ali Ladha, Cyrus Sobhani, Robby Stohel, Sterling Leduc)
+- 11/14/2025: Create Presentation Slide Deck (Sterling Leduc)
+- 11/15/2025: Create Practice Presentation (Ali Ladha, Cyrus Sobhani, Robby Stohel)
+- 11/16/2025: Submit Practice Presentation (Ali Ladha)
+- 12/07/2025: Submit Group GitHub Portfolio (Ali Ladha)
+- 12/07/2025: Submit Individual GitHub Portfolio (Cyrus Sobhani)
+- 12/07/2025: Submit Individual GitHub Portfolio (Robby Stohel)
+- 12/07/2025: Submit Individual GitHub Portfolio (Sterling Leduc)
+- 12/08/2025: Final Presentation (On Campus) (Ali Ladha, Cyrus Sobhani, Robby Stohel, Sterling Leduc)
