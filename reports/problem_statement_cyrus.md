@@ -16,9 +16,9 @@ Frequency of cart abandonment will be established using simple statistical metho
 The project will deliver an EDA, a notebook of implementable models, and a presentation on the project's insights. The EDA will serve as the project's quantifiable source of baselines. The notebook of implementable models will serve two purposes. First, as a template for Swire Coca-cola's data science department to implement any models they find useful. Second, as a proof to defend accuracy of the insights. The presentation will serve to communicate the insights discovered, success metrics, and recommendations. 
 
 ## Details
-Work on the EDA will begin September 15th. Delivery on October 5th.
-Modeling will begin on October 6th. Deliver on October 26th.
-Presentation preparation will begin on October 27th. Delivery on December 3rd.
+- Work on the EDA will begin September 15th. Delivery on October 5th.
+- Modeling will begin on October 6th. Deliver on October 26th.
+- Presentation preparation will begin on October 27th. Delivery on December 3rd.
 
 ## Note for Cyrus
 - Inlcude integer or linear programming for logistics optemization, potentially...
