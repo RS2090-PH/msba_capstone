@@ -2,6 +2,7 @@
 
 
 ## Business Problem
+
 Swire Coca-Cola (Swire) recently launched MyCoke360, a B2B platform for Foodservice On-Premise (FSOP) customers to purchase Coca-Cola products. Swire is incurring losses each order cycle due to cart abandonment, where customers add products to their carts but do not submit orders by the scheduled date. This problem disrupts plant logistics, reduces revenue, and strains customer relationships.
 
 
