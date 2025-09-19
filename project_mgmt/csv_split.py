@@ -2,6 +2,7 @@ import pandas as pd
 import sys
 import os
 
+
 def split_csv(input_file: str, output_prefix: str = "split"):
     """
     Splits a CSV file into two CSV files of approximately equal size by rows.
@@ -26,8 +27,8 @@ def split_csv(input_file: str, output_prefix: str = "split"):
 
         # Prepare output file names
         base_name = os.path.splitext(os.path.basename(input_file))[0]
-        file1 = f"{output_prefix}_part1.csv"
-        file2 = f"{output_prefix}_part2.csv"
+        file1 = f"{output_prefix}_0.csv"
+        file2 = f"{output_prefix}_1.csv"
 
         # Save to new CSVs
         df1.to_csv(file1, index=False)
