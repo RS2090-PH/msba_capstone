@@ -1,0 +1,59 @@
+Make sure we use databricks/spark in order to use the visit_plan csv.
+
+catalog -> workspace -> default -> capstone data -> default -> create -> volume -> managed -> capstone_data
+  Make suer the volume name is "capstone_data"
+
+Code for bringing it in via spark is on Teams
+
+Order of events (for compiling):
+
+    1. For all tables - Robbie
+    1.1 Common columns
+    1.2 Timezone mapping
+    1.3 Casting and mapping
+    1.4 delete NaNs in mapping columns.
+    1.4.1 CUSTOMER_ID / CUSTOMER_NUMBER
+    1.4.2 MATERIAL_ID / ITEM_ID
+    
+    2. Cleaning (table-specific)
+    2.2 Write-up of what we change in each table
+    2.3 Head
+    2.4 rows/columns
+    2.5 distinct in each
+    2.8 Removal of NaNs - Robbie
+    
+    3. Wide-Table (source of truth) construction - Robbie
+    3.1 Add 2 columns
+    3.1.1 Anchor date start
+    3.1.2 Anchor date end
+    3.1.3 Flag - added_to_cart
+    3.1.4 Flag - purchased
+
+    4. Individual EDA off the wide-table for pre-modelling questions - Everyone
+    4.1 Remove low-occurance distinct variables. categorical outlier removal based on mode. 
+    4.2 Remove Outliers. Numerical outlier removal based on confidence intervals . Cyrus to give Grubb's test code to the team.
+    4.2.1 Group box and whisker plots or a density plot
+
+
+
+
+
+Appendix (Check before finishing):
+
+Things we need to do:
+1. Checking for nulls - Robby
+2. Common columns - Cyrus
+3. GoogleAnalytics table explosion - Robby. Confirm that ITEM_ID = MATERIAL_ID
+4. Timezone mapping - Robby. Make sure it's all UTC
+5. Review casting - Robby (during compiling)
+6. Setup Thresholds - Ali
+7. Box and Whisker visualizations - Use median, NOT mean. Outlier removal in sales dataset with Grubb's test - Cyrus
+8. Time histograms - Cyrus
+9. Use dead net columns if there
+10. Abandonment rate across devices
+11. Try to answer as much as we can during EDA.
+
+
+
+
+
