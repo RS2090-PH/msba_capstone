@@ -1,37 +1,61 @@
-# Problem Statement: Reducing Cart Abandonment on MyCoke360
+# Problem Statement: Financial Impact of Cart Abandonment on MyCoke360 Revenue and Product Mix
 
 
 ## Business Problem
 
-MyCoke360, a digital ordering platform launched in summer 2024, serves B2B customers such as restaurants, schools, and retailers. As a new initiative, the platform has not yet fully optimized the ordering experience, and one of the most pressing challenges is cart abandonment. Cart abandonment occurs when a customer adds products to their digital cart but fails to complete the order by their required cutoff time. Because orders must be placed before specific deadlines, items left behind roll over into future carts unless removed, inflating abandoned cart volumes. This directly reduces revenue, creates uncertainty in demand forecasting and may contribute to customer dissatisfaction or churn.
-
-Cart abandonment undermines both the efficiency and the financial performance of the platform. Each instance represents unrealized revenue, skews product demand forecasting, and risks eroding customer trust if the ordering process is perceived as complex or unreliable. If left unaddressed, this challenge could translate into millions of dollars in lost sales annually, restrict the growth and adoption of MyCoke360, weaken confidence in the platform, and reduce the client’s competitive advantage relative to alternative ordering channels. 
+MyCoke360 is a digital ordering platform for B2B customers that launched in summer 2024. The platform serves FSOP customers and logs web events and item interactions. Cart abandonment is defined as a customer adding an item to a cart and not completing a purchase by the next expected order date based on the Swire’s ordering rules. The specific question for this workstream is: what is the financial impact of cart abandonment on total MyCoke360 revenue and on the composition of product sales by brand and pack type.
 
 
 ## Benefit of a Solution
 
-Addressing cart abandonment offers immediate financial upside by converting unrealized revenue into completed sales. It will also improve forecasting accuracy, streamline supply chain planning, and strengthen customer retention by ensuring a smoother ordering experience. The client will gain clearer visibility into customer behaviors, enabling strategic product placement and pricing decisions. In the long term, reducing cart abandonment will bolster MyCoke360’s role as a reliable digital ordering hub, increasing adoption rates among existing and new business partners.
+Quantifying lost revenue and mix distortion will allow the business to size the opportunity, prioritize fixes, and target interventions where they matter most. Clear measurement of lost dollars, recovered dollars, and net revenue impact provides an objective basis for investment decisions. Understanding which brands and pack types are overrepresented in abandoned value versus realized sales will support pricing, merchandising, and inventory actions that protect revenue while improving the customer experience.
 
 
 ## Analytics Approach
 
-The project will leverage the client’s fact/dimension warehouse structure, combining Google Analytics event data with transactional data from orders and sales. A descriptive analysis will identify behavioral and temporal patterns preceding abandonment, such as sequences of clicks, device usage, or delays in checkout. Predictive modeling may highlight which conditions most strongly signal abandonment risk, while prescriptive recommendations can inform interface improvements, messaging strategies, or timing interventions.
-
-The approach prioritizes business questions with the highest financial impact. Specifically, estimating revenue loss from abandoned carts and identifying which products appear most frequently in abandoned carts will take precedence, since these directly quantify financial consequences. Secondary but valuable analyses will include understanding recovery behaviors (customers later completing purchases) and device-specific friction points. While not all potential questions will be addressed, this prioritization ensures the greatest immediate return.
+This analysis integrates Google Analytics events with orders and sales to measure lost value and to attribute that value to product groups. Event timestamps in GA are recorded in EST and will be converted to each customer’s local time using the sales office or plant. Order windows are constructed from anchor date, frequency, and local cutoff time, with exceptions applied where specified. Abandonment is labeled when an item is added but no purchase occurs within that window, and the label is corrected when an order exists for that window in the orders table. Revenue per item is estimated from sales using NSI_DEAD_NET at the material and date level to value abandoned items because GA does not record price unless the item is purchased.
 
 
 ## Success Metrics
 
-Success will be measured by quantifiable reductions in cart abandonment rates and improvements in order completion percentages. Financially, the project aims to estimate and then reduce the revenue gap attributable to abandonment. Additional success indicators include improved product-level insights into abandonment patterns, validated behavioral predictors, and actionable recommendations that the client can implement to influence customer behavior. Timeframe for measurement will align with order cycles, enabling early detection of improvements within a few months of intervention.
+Success is defined by a focused set of financial and mix metrics that can be produced from the one-year data window. The baseline is total MyCoke360 revenue for the period. Lost revenue is the estimated dollar value of items in abandoned windows. Recovered revenue is the realized revenue for items that are purchased within the defined recovery window after an initial abandonment. Net revenue impact is lost revenue minus recovered revenue and is also expressed as a percent of total revenue. Mix impact is measured by comparing abandoned value share with sales value share by brand and pack type and by listing the top at-risk SKUs by lost dollars and by frequency of appearance in abandoned windows.
 
 
 ## Scope
 
-The project will deliver analyses and models to explain abandonment behavior, financial estimates of lost revenue, and prioritized recommendations for reducing abandonment. These outputs will include dashboards or reports summarizing patterns, predictive insights on high-risk behaviors, and product-level analyses of abandonment frequency. Out of scope are full-scale technical implementations, interface redesigns, or permanent system integrations, though the recommendations will be designed to inform such initiatives.
+This workstream will deliver a reconciled dataset and calculations required to compute the baseline revenue, lost revenue, recovered revenue, net impact, and mix comparisons by brand and pack type. It will also deliver a concise summary of top at-risk SKUs by lost dollars and frequency. Items outside scope include broader behavioral modeling, UI design, or cross-channel churn analyses, which are addressed by other project workstreams.
 
 
 ## Details
 
-The analysis will draw on data from June 2024 through May 2025, providing a full year of behavioral and transactional insights. Data sources include fact tables (Google Analytics events, orders, sales) and dimension tables (customers, visit plans, cutoff times, materials). Known data limitations, such as incomplete Google Analytics tracking and mismatches between event data and order records, will be accounted for by triangulating with orders and sales data. The client team will provide access to domain experts, data owners, and operational context, while the project team will focus on producing timely insights that can be validated and applied to ongoing business decisions.
+The analysis period is 5/31/2024 through 5/26/2025. Data sources include GA events for site interactions and associated items, orders for what was ordered, and sales for realized revenue using NSI_DEAD_NET. Dimension tables provide customer, visit plan history, operating hours, cutoff time exceptions, and material attributes such as brand, flavor, pack size, and pack type. Known limitations include missing GA purchase events, mismatches between GA cart or purchase items and the orders table, and blank item details for some mobile purchases. These limitations will be mitigated by reconciling GA with orders to correct abandonment labels and by valuing items using sales data.
 
+**Key Deadlines:**
+
+* 9/12/2025: **Draft Workstream Problem Statement** (Ali Ladha)
+* 9/12/2025: **Draft Workstream Problem Statement** (Cyrus Sobhani)
+* 9/12/2025: **Draft Workstream Problem Statement** (Robby Stohel)
+* 9/12/2025: **Draft Workstream Problem Statement** (Sterling Leduc)
+* 9/13/2025: **Compile Final Problem Statement** (Robby Stohel)
+* 9/14/2025: **Submit Final Problem Statement** (Ali Ladha, Cyrus Sobhani, Sterling Leduc, Robby Stohel)
+* 10/02/2025: **Draft Workstream EDA Notebook** (Ali Ladha)
+* 10/02/2025: **Draft Workstream EDA Notebook** (Cyrus Sobhani)
+* 10/02/2025: **Draft Workstream EDA Notebook** (Sterling Leduc)
+* 10/02/2025: **Draft Workstream EDA Notebook** (Robby Stohel)
+* 10/04/2025: **Compile Final EDA Notebook** (Robby Stohel)
+* 10/05/2025: **Submit Final EDA Notebook** (Ali Ladha)
+* 10/23/2025: **Draft Workstream Modeling Notebook** (Ali Ladha)
+* 10/23/2025: **Draft Workstream Modeling Notebook** (Cyrus Sobhani)
+* 10/23/2025: **Draft Workstream Modeling Notebook** (Sterling Leduc)
+* 10/23/2025: **Draft Workstream Modeling Notebook** (Robby Stohel)
+* 10/25/2025: **Compile Final Modeling Notebook** (Robby Stohel)
+* 10/26/2025: **Submit Final Modeling Notebook** (Ali Ladha, Cyrus Sobhani, Robby Stohel, Sterling Leduc)
+* 11/14/2025: **Develop Presentation Deck** (Sterling Leduc)
+* 11/15/2025: **Prepare Practice Presentation** (Ali Ladha, Cyrus Sobhani, Robby Stohel)
+* 11/16/2025: **Submit Practice Presentation Materials** (Ali Ladha)
+* 12/07/2025: **Submit Group GitHub Portfolio** (Ali Ladha)
+* 12/07/2025: **Submit Individual GitHub Portfolio** (Cyrus Sobhani)
+* 12/07/2025: **Submit Individual GitHub Portfolio** (Robby Stohel)
+* 12/07/2025: **Submit Individual GitHub Portfolio** (Sterling Leduc)
+* 12/08/2025: **Deliver Final Presentation (On Campus)** (Ali Ladha, Cyrus Sobhani, Robby Stohel, Sterling Leduc)
 
