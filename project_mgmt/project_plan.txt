@@ -1,95 +1,82 @@
-Next Meeting: 2025-09-13 1030-1200
+# Initial Team Planning Notes
 
-Tasks:
-- Robby to set up Airtable
-- Each do Problem Statement, due Friday
-- Robby to Compile Problem Statements
-- Cyrus to ask Swire if cart abandonment effects their raw materials ordering.
+## Upcoming Tasks
 
----
-
-Notes:
-- Lucid chart of git branch workflow
-- After EDA, all agree on finalized cleaning staged to start modeling with
-
----
-
-Person 0 - Cyrus
-- Question - 
-- Question - 
-
-Person 1 - Ali
-- Question - 
-- Question - 
-
-Person 2 - Robby
-- Question - 
-- Compiling
-
-Person 3 - Sterling
-- Question - 
-- Presentation (Maybe Dashboard)
+- Robby: Set up Airtable.
+- All team members: Draft individual problem statements (due Friday).
+- Robby: Compile submitted problem statements.
+- Cyrus: Confirm with Swire whether cart abandonment impacts raw-materials ordering.
 
 
----
+## General Notes
 
-Question:
-Cyrus
-1. Redefine abandoned cart?
-1. What behavioral events or sequence of events are the strongest predictors of cart abandonment?
-1. What behaviors or conditions lead to a customer returning to complete a previously abandoned cart?
+- Develop a Lucidchart diagram outlining the Git branching workflow.
+- Following EDA, align on the finalized data-cleaning stages before beginning modeling.
 
-Ali
-2. Redefine abandoned cart?
-2. How does cart abandonment vary by device type and how can it be reduced?
-2. Which products appear most frequently in abandoned carts?
 
-Sterling
-3. Redefine abandoned cart?
-3. What happens after a cart is abandoned? Does the customer order through another method or churn?
+## Task Designation
 
-Robby
-4. Redefine abandoned cart?
-4. What is the financial impact of cart abandonment on total MyCoke360 revenue and product mix?
+### Cyrus
 
----
+- **Question:*- What behavioral events or sequences of events are the strongest predictors of cart abandonment?
+- **Question:*- What behaviors or conditions lead to a customer returning to complete a previously abandoned cart?
 
-Code Flow:
+### Ali
 
+- **Question:*- How does cart abandonment vary by device type, and how can it be reduced?
+- **Question:*- Which products appear most frequently in abandoned carts?
+
+### Robby
+
+- **Question:*- What is the financial impact of cart abandonment on total MyCoke360 revenue and product mix?
+- Responsible for code compilation.
+
+### Sterling
+
+- **Question:*- What happens after a cart is abandoned? Does the customer order through another method or churn?
+- Responsible for presentation development.
+
+
+## Code Structure
+
+```
 [SETUP]
 
 [CLEANING]
 
-[TOPIC/QUESTION]
+[TOPIC / QUESTION]
 
-[CODE/FEATURE ENGINEERING]
-
-[RESULT]
-
-[DESCRPTION]
-
-[TOPIC/QUESTION]
-
-[CODE/FEATURE ENGINEERING]
+[CODE / FEATURE ENGINEERING]
 
 [RESULT]
 
-[DESCRPTION]
+[INTERPRETATION]
 
-[TOPIC/QUESTION]
+[TOPIC / QUESTION]
 
-[CODE/FEATURE ENGINEERING]
+[CODE / FEATURE ENGINEERING]
 
 [RESULT]
 
-[DESCRPTION]
+[INTERPRETATION]
 
----
+[TOPIC / QUESTION]
 
-EDA
-Strictly understanding data. Proportions, cleanliness, feature engineering
+[CODE / FEATURE ENGINEERING]
 
-Modeling
-Format data for model, build model, interpret results
+[RESULT]
 
+[INTERPRETATION]
+```
+
+
+## Workflow Overview
+
+### Exploratory Data Analysis (EDA)
+
+Focus on data profiling, proportions, data integrity, feature exploration, and formatting.
+
+### Modeling
+
+Prepare modeling datasets, build models, and interpret resulting insights.
 

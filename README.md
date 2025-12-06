@@ -4,10 +4,9 @@ This repository hosts the group work for the University of Utah **Master of Scie
 
 ## Repository Structure
 
-* **`/notebooks/`** – Jupyter/Colab notebooks for EDA, modeling, and visualization.
+* **`/notebooks/`** – Python notebooks for EDA, modeling, and visualization.
 * **`/reports/`** – Drafts and final reports, presentations, and documentation.
 * **`/project_mgmt/`** – Meeting notes, task tracking, and progress logs.
-* **`/files/`** - Misc files and other shared content.
 
 ## Objectives
 
