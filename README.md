@@ -14,13 +14,13 @@ This repository hosts the group work for the University of Utah **Master of Scie
 * Deliver clear, data-driven insights aligned with stakeholder priorities.
 * Build a reproducible and well-documented workflow for both academic and professional review.
 
-## Confidentiality Notice
+## Business Value
+A clear measurement of lost and recovered revenue helps Swire size the commercial impact of abandonment and identify high-value opportunities:
 
-This repository follows the **Non-Disclosure Agreement (NDA)** between the University of Utah and Swire Coca-Cola.
-
-* **Do not include** raw proprietary data (add file names to the gitignore file), customer information, or business decisions.
-* Portfolio/code samples may include methodology, algorithms, and technical demonstrations, but **not actual findings or business outcomes**.
-* All materials in this repository are for **educational purposes only**.
+- Revenue Opportunity Sizing - Establishing the dollar value at risk due to abandonment and the portion recoverable under improved experiences.
+- Targeted Interventions - Highlighting specific brands, pack types, and SKUs that contribute disproportionately to lost value.
+- Improved Merchandising & Pricing Decisions - Using mix distortion metrics to adjust presentation, pricing, or promotion strategies.
+- Operational Efficiency - A standardized, reproducible process enables ongoing monitoring across future data periods.
 
 ## Getting Started
 
